@@ -1,0 +1,131 @@
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/Raleway-Regular.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/Raleway-Regular.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/Raleway-Medium.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/Raleway-SemiBold.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/Raleway-Bold.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Regular.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'PTSans';
+  src: url('../fonts/PTSans-Regular.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+}
+
+body {
+  font-family: Raleway;
+  font-weight: 500;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 1740px;
+  background-color: #f0f0f0;
+}
+
+.header__top {
+  min-height: 98px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__list {
+  display: flex;
+  gap: 0 30px;
+}
+
+.menu__item {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.menu__item::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 700;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+
+.menu__link {
+  font-weight: 500;
+  transition: opacity .3s ease;
+}
+
+.menu__item:hover::after {
+  opacity: 1;
+}
+
+.menu__item:hover .menu__link {
+  opacity: 0;
+}
+
+.social {
+  display: flex;
+  gap: 44px;
+  align-items: center;
+}
+
+.social__link {
+  display: inline-block;
+}
+
+.social__link svg {
+  transition: color .3s ease, transform .3s ease;
+}
+
+.social__link:hover svg {
+  color: #00a9bd;
+  transform: scale(1.25);
+}
+
+.logo svg {
+  transition: color .3s ease;
+}
+
+.logo:hover svg {
+  color: #00a9bd;
+}
