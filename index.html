@@ -13,7 +13,7 @@
 	<header class="header">
 		<div class="container">
 			<div class="header__top">
-				<a class="logo" href="#">
+				<a class="logo" href="#" aria-label="logo">
 					<svg width="150" height="98">
 						<use xlink:href="./images/sprite.svg#logo"></use>
 					</svg>
@@ -34,23 +34,23 @@
 						</li>
 					</ul>
 				</nav>
-				<ul class="social">
-					<li class="social__item">
-						<a href="#" class="social__link">
+				<ul class="social-contacts">
+					<li class="social-contacts__item">
+						<a href="#" class="social-contacts__link" aria-label="telegram">
 							<svg width="24" height="25">
 								<use xlink:href="images/sprite.svg#telegram"></use>
 							</svg>
 						</a>
 					</li>
-					<li class="social__item">
-						<a href="#" class="social__link">
+					<li class="social-contacts__item">
+						<a href="#" class="social-contacts__link" aria-label="whatsapp">
 							<svg width="24" height="25">
 								<use xlink:href="images/sprite.svg#whatsapp"></use>
 							</svg>
 						</a>
 					</li>
-					<li class="social__item">
-						<a href="#" class="social__link">
+					<li class="social-contacts__item">
+						<a href="#" class="social-contacts__link" aria-label="instagram">
 							<svg width="24" height="25">
 								<use xlink:href="images/sprite.svg#instagram"></use>
 							</svg>
@@ -67,13 +67,16 @@
 					<button class="booking header__booking">I want to travel</button>
 					<ul class="header__info-list">
 						<li class="header__info-item">
-							<span>500+</span> <br> Individual travel
+							<span>500+</span>
+							<span> Individual travel</span>
 						</li>
 						<li class="header__info-item">
-							<span>800+</span> <br> Travelers in individual
+							<span>800+</span>
+							<span> Travelers in individual</span>
 						</li>
 						<li class="header__info-item">
-							<span>7+</span> <br> Directions
+							<span>7+</span>
+							<span> Directions</span>
 						</li>
 					</ul>
 				</div>
@@ -90,23 +93,41 @@
 					<p class="info__text">We are always online, ready to resolve any issue during your trip.</p>
 				</div>
 				<div class="info__galery">
-					<div class="info__img-box">
-						<img class="info__img" src="./images/galery/1.jpg" alt="tour approval">
+					<div class="info__img-box" style="background-image: url('./images/galery/1.jpg')">
 						<div class="info__img-step">01</div>
-						<div class="info__img-descr">tour approval</div>
-						<a href="#"><img src="./images/galery/arrow.svg" class="info__img-arrow" alt="arrow"></a>
+						<div class="info__inner">
+							<h3 class="info__img-descr">tour approval</h3>
+							<a class="info__img-arrow" href="#" aria-label="arrow">
+								<svg width="60" height="57">
+									<use xlink:href="./images/sprite.svg#arrow"></use>
+								</svg>
+							</a>
+						</div>
+
 					</div>
-					<div class="info__img-box">
-						<img class="info__img" src="./images/galery/2.jpg" alt="Preparation">
+					<div class="info__img-box" style="background-image: url('./images/galery/2.jpg')">
 						<div class="info__img-step">02</div>
-						<div class="info__img-descr">Preparation</div>
-						<a href="#"><img src="./images/galery/arrow.svg" class="info__img-arrow" alt="arrow"></a>
+						<div class="info__inner">
+							<h3 class="info__img-descr">Preparation</h3>
+							<a class="info__img-arrow" href="#" aria-label="arrow">
+								<svg width="60" height="57">
+									<use xlink:href="./images/sprite.svg#arrow"></use>
+								</svg>
+							</a>
+						</div>
+
 					</div>
-					<div class="info__img-box">
-						<img class="info__img" src="./images/galery/3.jpg" alt="Beginning of the journey">
+					<div class="info__img-box" style="background-image: url('./images/galery/3.jpg')">
 						<div class="info__img-step">03</div>
-						<div class="info__img-descr">Beginning of the <br> journey</div>
-						<a href="#"><img src="./images/galery/arrow.svg" class="info__img-arrow" alt="arrow"></a>
+						<div class="info__inner">
+							<h3 class="info__img-descr">Beginning of the <br> journey</h3>
+							<a class="info__img-arrow" href="#" aria-label="arrow">
+								<svg width="60" height="57">
+									<use xlink:href="./images/sprite.svg#arrow"></use>
+								</svg>
+							</a>
+						</div>
+
 					</div>
 				</div>
 			</div>
