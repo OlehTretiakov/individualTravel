@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="./css/style.css">
 	<title>Individual travel</title>
 </head>
@@ -89,7 +90,7 @@
 		<section class="info">
 			<div class="container">
 				<div class="info__top">
-					<h2 class="info__title title title_underlined">How does it work?</h2>
+					<h2 class="info__title title title_underlined"><span >How does it work?</span></h2>
 					<p class="info__text">We are always online, ready to resolve any issue during your trip.</p>
 				</div>
 				<div class="info__galery">
@@ -184,8 +185,42 @@
 				</section>
 			</div>
 		</section>
+
+		<section class="slider">
+			<div class="container">
+				<h2 class="title slider__title"><span>top impressions you will get</span></h2>
+
+				<div class="swiper ">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img class="slider__img" src="./images/slider/1.jpg" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img class="slider__img" src="./images/slider/2.jpg" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img class="slider__img" src="./images/slider/3.jpg" alt="">
+						</div>
+					</div>
+
+					<div class="slider__buttons button-prev">
+						<svg width="78" height="28">
+							<use xlink:href="images/sprite.svg#arrow-left"></use>
+						</svg>
+					</div>
+					<div class="slider__buttons button-next">
+						<svg width="78" height="28">
+							<use xlink:href="images/sprite.svg#arrow-right"></use>
+						</svg>
+					</div>
+				</div>
+			</div>
+		</section>
 	</main>
 
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+	<script src="../js/main.js"></script>
 
 </body>
 
