@@ -227,7 +227,7 @@ body {
 
 .title span {
   display: inline-block;
-  background-image: url(../images/decor-line.svg);
+  background-image: url("../images/decor-line.svg");
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: contain;
@@ -464,7 +464,7 @@ body {
 }
 
 .questions__subtitle {
-text-transform: uppercase;
+  text-transform: uppercase;
   font-size: 32px;
   font-weight: 400;
   margin-bottom: 10px;
@@ -473,4 +473,102 @@ text-transform: uppercase;
 .questions__descr {
   font-size: 20px;
   font-weight: 400;
+}
+
+.tours {
+  padding: 150px 0 100px;
+}
+
+li.tours__item::marker {
+  content: '';
+}
+
+.tours__title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.tours__list {
+  display: flex;
+  gap: 35px;
+}
+
+.tours__item {
+  color: #fff;
+  position: relative;
+  width: 180px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.1s ease;
+}
+
+.tours__img {
+  height: 800px;
+  border-radius: 35px;
+  object-fit: cover;
+}
+
+.tours__item.tours__item--active {
+  width: 860px;
+}
+
+.tours__item-title {
+  position: absolute;
+  bottom: 115px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 40px;
+  opacity: 0;
+}
+
+.tours__item--active .tours__item-title {
+  opacity: 1;
+}
+
+.tours__item--active .tours__info-list {
+  left: 34px;
+}
+
+.tours__info-list {
+  position: absolute;
+  bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 55px;
+  left: 23px;
+  white-space: nowrap;
+}
+
+.tours__info-flag {
+  background-color: rgba(255, 255, 255, .7);
+  padding: 24px 52px;
+  border-radius: 35px;
+}
+
+.tours__info-price,
+.tours__info-date {
+  position: relative;
+  font-size: 24px;
+  font-weight: 500;
+  padding-left: 33px;
+}
+
+.tours__info-price::before,
+.tours__info-date::before {
+  content: '';
+  position: absolute;
+  top: 55%;
+  transform: translateY(-40%);
+  left: 0;
+  width: 23px;
+  height: 23px;
+  background: url("../images/info-ico.svg") center / cover no-repeat;
+}
+
+.tours__info-flag img {
+  max-width: 30px;
+  height: 30px;
 }
