@@ -572,3 +572,51 @@ li.tours__item::marker {
   max-width: 30px;
   height: 30px;
 }
+
+.footer {
+  background-color: #00A9BD;
+  padding: 50px 0;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.footer__box {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 150px;
+}
+
+.footer__menu {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1000px;
+  flex-shrink: 0;
+}
+
+.footer__menu>ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer__menu address {
+  font-style: normal;
+  font-weight: 400;
+}
+
+.footer__phone {
+  font-weight: 400;
+}
+
+.footer__legal {
+  font-weight: 400;
+}
+
+.footer__social-contacts {
+  margin-top: auto;
+}
