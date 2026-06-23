@@ -112,11 +112,11 @@ body {
   display: inline-block;
 }
 
-.social-contacts__link svg {
+.header-social-contacts__link svg {
   transition: color .3s ease, transform .3s ease;
 }
 
-.social-contacts__link:hover svg {
+.header-social-contacts__link:hover svg {
   color: #00a9bd;
   transform: scale(1.25);
 }
