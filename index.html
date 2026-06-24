@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="./css/reset.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/media.css">
 	<title>Individual travel</title>
 </head>
 
@@ -14,7 +15,7 @@
 	<header class="header">
 		<div class="container">
 			<div class="header__top">
-				<a class="logo" href="#" aria-label="logo">
+				<a class="logo header__logo" href="#" aria-label="logo">
 					<svg width="150" height="98">
 						<use xlink:href="./images/sprite.svg#logo"></use>
 					</svg>
@@ -37,21 +38,21 @@
 				</nav>
 				<ul class="social-contacts">
 					<li class="social-contacts__item">
-						<a href="#" class="header-social-contacts__link" aria-label="telegram">
+						<a href="#" class="social-contacts__link social-contacts__link--black" aria-label="telegram">
 							<svg width="24" height="25">
 								<use xlink:href="images/sprite.svg#telegram"></use>
 							</svg>
 						</a>
 					</li>
 					<li class="social-contacts__item">
-						<a href="#" class="header-social-contacts__link" aria-label="whatsapp">
+						<a href="#" class="social-contacts__link social-contacts__link--black" aria-label="whatsapp">
 							<svg width="24" height="25">
 								<use xlink:href="images/sprite.svg#whatsapp"></use>
 							</svg>
 						</a>
 					</li>
 					<li class="social-contacts__item">
-						<a href="#" class="header-social-contacts__link" aria-label="instagram">
+						<a href="#" class="social-contacts__link social-contacts__link--black" aria-label="instagram">
 							<svg width="24" height="25">
 								<use xlink:href="images/sprite.svg#instagram"></use>
 							</svg>
@@ -65,7 +66,7 @@
 			<div class="container">
 				<div class="header__content-inner">
 					<h1 class="header__title">Individual travel</h1>
-					<button class="booking header__booking" aria-label="apply for a tour">I want to travel</button>
+					<button class="booking header__booking">I want to travel</button>
 					<ul class="header__info-list">
 						<li class="header__info-item">
 							<span>500+</span>
@@ -90,7 +91,7 @@
 		<section class="info">
 			<div class="container">
 				<div class="info__top">
-					<h2 class="info__title title title_underlined"><span>How does it work?</span></h2>
+					<h2 class="info__title title"><span>How does it work?</span></h2>
 					<p class="info__text">We are always online, ready to resolve any issue during your trip.</p>
 				</div>
 				<div class="info__galery">
@@ -139,7 +140,7 @@
 				<h2 class="gallery__title title">comfortable accomodation</h2>
 				<section class="gallery__grid">
 					<div class="gallery__grid-item gallery__text gallery__text-1">
-						<div class="title-box title-box_left">
+						<div class="title-box title-box--left">
 							<svg width="50" height="50">
 								<use xlink:href="./images/sprite.svg#title-star"></use>
 							</svg>
@@ -180,7 +181,7 @@
 					</div>
 
 					<div class="gallery__grid-item map-img">
-						<button class="gallery__btn" aria-label="show more details">More details</button>
+						<button class="gallery__btn">More details</button>
 					</div>
 				</section>
 			</div>
@@ -256,7 +257,7 @@
 					<span>our other tours</span>
 				</h2>
 
-				<div class="tours__list">
+				<ul class="tours__list">
 
 					<li class="tours__item">
 						<img width="860" height="800" class="tours__img" src="./images/tours/bali.jpg" alt="bali">
@@ -360,7 +361,7 @@
 					</li>
 
 
-				</div>
+				</ul>
 			</div>
 		</section>
 	</main>
@@ -368,7 +369,7 @@
 	<footer class="footer">
 		<div class="container">
 			<div class="footer__box">
-				<a class="logo-footer" href="#" aria-label="logo">
+				<a class="logo footer__logo" href="#" aria-label="logo">
 					<svg width="150" height="98">
 						<use xlink:href="./images/sprite.svg#logo"></use>
 					</svg>
@@ -381,42 +382,45 @@
 						<li><a href="#">About us</a></li>
 						<li><a href="#">Reviews</a></li>
 					</ul>
-					<ul class="footer__contacts">
-						<li class="footer__contacts-title">Contacts:</li>
-						<li>
-							<a class="footer__phone" href="tel:+38066652344129">
-								+38066652344129
-							</a>
-						</li>
-						<li>
-							<address class="footer__address">
-								Kyiv, Kalynova St. 30
-							</address>
-						</li>
+					<div class="footer__contacts">
+						<p class="footer__contacts-title">Contacts:</p>
+						<ul class="footer__contacts-list">
+							<li>
+								<a class="footer__phone" href="tel:+38066652344129">
+									+38066652344129
+								</a>
+							</li>
+							<li>
+								<address class="footer__address">
+									Kyiv, Kalynova St. 30
+								</address>
+							</li>
+						</ul>
+
 						<ul class="social-contacts footer__social-contacts">
 							<li class="social-contacts__item">
-								<a href="#" class="social-contacts__link" aria-label="telegram">
+								<a href="#" class="social-contacts__link social-contacts__link--white" aria-label="telegram">
 									<svg width="24" height="25">
 										<use xlink:href="images/sprite.svg#telegram"></use>
 									</svg>
 								</a>
 							</li>
 							<li class="social-contacts__item">
-								<a href="#" class="social-contacts__link" aria-label="whatsapp">
+								<a href="#" class="social-contacts__link social-contacts__link--white" aria-label="whatsapp">
 									<svg width="24" height="25">
 										<use xlink:href="images/sprite.svg#whatsapp"></use>
 									</svg>
 								</a>
 							</li>
 							<li class="social-contacts__item">
-								<a href="#" class="social-contacts__link" aria-label="instagram">
+								<a href="#" class="social-contacts__link social-contacts__link--white" aria-label="instagram">
 									<svg width="24" height="25">
 										<use xlink:href="images/sprite.svg#instagram"></use>
 									</svg>
 								</a>
 							</li>
 						</ul>
-					</ul>
+					</div>
 					<ul class="footer__legal">
 						<li>
 							<a href="#">Tour operator license</a>
@@ -435,7 +439,7 @@
 
 
 	<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-	<script src="../js/main.js"></script>
+	<script src="js/main.js"></script>
 
 </body>
 
