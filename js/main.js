@@ -1,9 +1,19 @@
+const menuBtn = document.querySelector('.menu__btn')
+const menu = document.querySelector('.menu')
+
+menuBtn.addEventListener('click', () => {
+    menu.classList.toggle('menu--active')
+})
+
 const swiper = new Swiper('.swiper', {
     effect: "fade",
     loop: true,
     navigation: {
         nextEl: '.button-next',
         prevEl: '.button-prev',
+    },
+    pagination: {
+        el: ".swiper-pagination",
     },
 });
 

@@ -69,7 +69,7 @@ body {
 
 .menu__list {
   display: flex;
-  gap: 0 30px;
+  gap: 30px;
 }
 
 .menu__item {
@@ -137,10 +137,13 @@ body {
 .header__logo:hover svg {
   color: #00a9bd;
 }
-
+/* 
 .header__content {
   background: url("../images/header-bg.jpg") center / cover no-repeat;
-}
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
 
 .header__content-inner {
   text-align: center;
@@ -180,6 +183,7 @@ body {
   margin-top: auto;
   margin-bottom: 94px;
   display: flex;
+  gap: 30px;
   justify-content: space-evenly;
 }
 
@@ -238,7 +242,7 @@ body {
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: contain;
-  padding: 0 40px 5px;
+  padding: 0 20px 5px;
 }
 
 .info__text::before {
@@ -325,7 +329,7 @@ body {
   transform: scale(1.1);
 }
 
-.galery {
+.gallery {
   padding-top: 120px;
 }
 
@@ -337,17 +341,34 @@ body {
 .gallery__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, auto);
+  /* grid-template-rows: repeat(3, 500px); */
   gap: 10px;
+}
+
+
+
+.gallery__grid-item img {
+  height: 100%;
+  object-fit: cover;
 }
 
 .gallery__grid-item {
   border-radius: 25px;
 }
 
-.gallery__grid-item img {
-  height: 100%;
-  object-fit: cover;
+.gallery__grid-item:not(.img-double):not(.map-img) {
+  aspect-ratio: 560 / 500;
+}
+
+.img-double {
+  aspect-ratio: 1140 / 500;
+  grid-column: span 2;
+}
+
+.map-img {
+  aspect-ratio: 560 / 500;
+  background-size: cover;
+  background-position: center;
 }
 
 .gallery__text {
@@ -356,7 +377,6 @@ body {
   gap: 20px;
   justify-content: center;
   padding: 20px;
-  /* background: #f5f5f5; */
 }
 
 .title-box {
@@ -369,18 +389,18 @@ body {
   white-space: wrap;
 }
 
-.title-box--left {
-  transform: translateX(-60px);
-}
-
 .gallery__text p {
   font-size: 20px;
   font-weight: 400;
 }
 
 .gallery__text-1 {
-  padding-left: 90px;
+  padding-left: 60px;
   padding-right: 30px;
+}
+
+.gallery__text-1 p {
+  padding-left: 55px;
 }
 
 .gallery__text-2 {
@@ -393,9 +413,10 @@ body {
 }
 
 .map-img {
-  background: url('../images/accomodation-galery/map.jpg') top / contain no-repeat;
+  background: url('../images/accomodation-galery/map.jpg') center / contain no-repeat;
   display: flex;
   flex-direction: column;
+  /* min-height: 500px; */
 }
 
 .gallery__btn {
@@ -421,7 +442,7 @@ body {
 .slider__img {
   border-radius: 25px;
   display: inline-block;
-  max-width: 85%;
+  object-fit: contain;
 }
 
 .slider__buttons {
@@ -430,6 +451,10 @@ body {
   transform: translateY(-50%);
   z-index: 10;
   cursor: pointer;
+}
+
+.swiper-pagination {
+  display: none;
 }
 
 .button-prev {
@@ -506,11 +531,11 @@ body {
   cursor: pointer;
   overflow: hidden;
   transition: width 0.3s ease;
+  border-radius: 35px;
 }
 
 .tours__img {
   height: 800px;
-  border-radius: 35px;
   object-fit: cover;
 }
 
@@ -650,4 +675,43 @@ body {
 
 .footer__social-contacts {
   margin-top: auto;
+}
+
+/* during adaptation  */
+
+.menu__btn {
+  padding: 0;
+  display: none;
+  width: 40px;
+  height: 25px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 20;
+
+  span {
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+  }
+}
+
+.menu__btn::after,
+.menu__btn::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+  transition: transform .4s ease;
+}
+
+.menu__btn::before {
+  top: 0;
+}
+
+.menu__btn::after {
+  bottom: 0;
 }

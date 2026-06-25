@@ -21,6 +21,9 @@
 					</svg>
 				</a>
 				<nav class="menu">
+					<button class="menu__btn">
+						<span></span>
+					</button>
 					<ul class="menu__list">
 						<li class="menu__item" data-text="Travel formats">
 							<a href="#" class="menu__link">Travel formats</a>
@@ -62,7 +65,7 @@
 			</div>
 		</div>
 
-		<div class="header__content">
+		<div class="header__content" style="background: url('../images/header-bg.jpg') center / cover no-repeat;">
 			<div class="container">
 				<div class="header__content-inner">
 					<h1 class="header__title">Individual travel</h1>
@@ -135,7 +138,7 @@
 			</div>
 		</section>
 
-		<section class="galery">
+		<section class="gallery">
 			<div class="container">
 				<h2 class="gallery__title title">comfortable accomodation</h2>
 				<section class="gallery__grid">
@@ -144,7 +147,7 @@
 							<svg width="50" height="50">
 								<use xlink:href="./images/sprite.svg#title-star"></use>
 							</svg>
-							<h3 class="title">Hotels on this tour</h3>
+							<h3 class="title gallery__subtitle">Hotels on this tour</h3>
 						</div>
 
 						<p>a real treat for aesthetes. We have selected very comfortable hotel and safari lodge options</p>
@@ -154,7 +157,7 @@
 						<img width="1140" height="500" src="./images/accomodation-galery/1.jpg" alt="hotels photo">
 					</div>
 
-					<div class="gallery__grid-item map-img">
+					<div class="gallery__grid-item map-img map-img--first">
 					</div>
 
 					<div class="gallery__grid-item">
@@ -163,7 +166,7 @@
 
 					<div class="gallery__grid-item gallery__text gallery__text-2">
 						<div class="title-box">
-							<h3 class="title">For those who want</h3>
+							<h3 class="title gallery__subtitle">For those who want</h3>
 							<svg width="50" height="50">
 								<use xlink:href="./images/sprite.svg#title-star"></use>
 							</svg>
@@ -180,7 +183,7 @@
 						<img width="560" height="500" src="./images/accomodation-galery/4.jpg" alt="pool photo">
 					</div>
 
-					<div class="gallery__grid-item map-img">
+					<div class="gallery__grid-item map-img map-img--last">
 						<button class="gallery__btn">More details</button>
 					</div>
 				</section>
@@ -194,18 +197,18 @@
 				<div class="swiper ">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
-							<img width="1400" height="550" class="slider__img" src="./images/slider/1.jpg"
+							<img class="slider__img" src="./images/slider/1.jpg"
 								alt="path to mountains photo">
 						</div>
 						<div class="swiper-slide">
-							<img width="1400" height="550" class="slider__img" src="./images/slider/2.jpg" alt="valley photo">
+							<img class="slider__img" src="./images/slider/2.jpg" alt="valley photo">
 						</div>
 						<div class="swiper-slide">
-							<img width="1400" height="550" class="slider__img" src="./images/slider/3.jpg"
+							<img class="slider__img" src="./images/slider/3.jpg"
 								alt="mountains and lake photo">
 						</div>
 					</div>
-
+					<div class="swiper-pagination"></div>
 					<div class="slider__buttons button-prev">
 						<svg width="78" height="28">
 							<use xlink:href="images/sprite.svg#arrow-left"></use>
@@ -219,7 +222,7 @@
 				</div>
 			</div>
 		</section>
-
+			
 		<section class="questions">
 			<div class="container">
 				<h2 class="questions__title title"><span>your questions</span></h2>
@@ -250,7 +253,7 @@
 				</ul>
 			</div>
 		</section>
-
+		
 		<section class="tours">
 			<div class="container">
 				<h2 class="title tours__title">
@@ -364,6 +367,7 @@
 				</ul>
 			</div>
 		</section>
+		
 	</main>
 
 	<footer class="footer">
